@@ -43,3 +43,9 @@ function pesanWA(produk) {
     const pesan = encodeURIComponent(`Halo kak, saya mau pesan ${produk}`);
     window.location.href = `https://wa.me/${noWA}?text=${pesan}`;
 }
+
+function HubungiWa() {
+  const noWA = "6285648783485";
+  const pesan = encodeURIComponent(`Halo kak, saya mau pesan`);
+  window.location.href = `https://wa.me/${noWA}?text=${pesan}`;
+}
