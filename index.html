@@ -45,7 +45,9 @@
       <a href="#keunggulan" class="block font-semibold py-2">Keunggulan</a>
       <a href="#produk" class="block font-semibold py-2">Produk</a>
       <a href="#cara-pesan" class="block font-semibold py-2">Cara Pesan</a>
-      <a href="https://wa.me/6285648783485" class="block bg-blue-600 text-white text-center py-3 rounded-xl shadow-lg font-bold">Pesan WhatsApp</a>
+      <button onclick="HubungiWa()" class="w-full block bg-blue-600 text-white text-center py-3 rounded-xl shadow-lg font-bold">
+        Pesan WhatsApp
+      </button>
     </div>
   </nav>
   
@@ -105,56 +107,46 @@
   <section id="produk" class="py-24 px-4">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-16" data-aos="fade-up">
-        <h2 class="text-3xl md:text-4xl font-bold mb-3 text-slate-900">Pilihan Layanan Kami</h2>
+        <h2 class="text-3xl md:text-4xl font-bold mb-3 text-slate-900">Pilihan Produk Kami</h2>
         <p class="text-slate-500">Berbagai menu pilihan untuk segala jenis kebutuhan acara Anda</p>
         <div class="h-1.5 w-24 bg-blue-600 mx-auto mt-4 rounded-full"></div>
       </div>
       
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div data-aos="fade-up" data-aos-delay="100" class="group bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-2xl transition duration-500">
-          <div class="relative h-56 overflow-hidden">
-            <img src="image/NasiKotak.png" alt="Nasi Kotak Banyuwangi" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-2">Nasi Kotak</h3>
-            <p class="text-slate-600 text-sm leading-relaxed mb-6">Paket praktis & lengkap untuk rapat kantor, pengajian, atau acara kampus.</p>
-            <button onclick="pesanWA('Nasi Kotak')" class="w-full py-3 bg-white border-2 border-blue-600 text-blue-600 font-bold rounded-xl group-hover:bg-blue-600 group-hover:text-white transition duration-300">Pesan Sekarang</button>
-          </div>
-        </div>
-
+      <div class="grid grid-cols-1 md:flex md:justify-center gap-8">
         <div data-aos="fade-up" data-aos-delay="200" class="group bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-2xl transition duration-500">
           <div class="relative h-56 overflow-hidden">
-            <img src="image/Tumpeng.png" alt="Tumpeng Banyuwangi" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+            <img src="image/BoluKlemben.png" alt="Bolu Klemben" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
           </div>
           <div class="p-6">
-            <h3 class="text-xl font-bold mb-2">Tumpeng</h3>
-            <p class="text-slate-600 text-sm leading-relaxed mb-6">Sajian tradisional megah dengan hiasan cantik untuk syukuran dan peresmian.</p>
-            <button onclick="pesanWA('Tumpeng')" class="w-full py-3 bg-white border-2 border-blue-600 text-blue-600 font-bold rounded-xl group-hover:bg-blue-600 group-hover:text-white transition duration-300">Pesan Sekarang</button>
+            <h3 class="text-xl font-bold mb-2">Bolu Klemben</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">Kue tradisional khas Banyuwangi yang renyah dan lembut, sangat pas untuk camilan santai.</p>
+            <button onclick="pesanWA('Bolu Klemben')" class="w-full py-3 bg-white border-2 border-blue-600 text-blue-600 font-bold rounded-xl group-hover:bg-blue-600 group-hover:text-white transition duration-300">Pesan Sekarang</button>
           </div>
         </div>
 
         <div data-aos="fade-up" data-aos-delay="300" class="group bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-2xl transition duration-500">
           <div class="relative h-56 overflow-hidden">
-            <img src="image/Hampers.png" alt="Hampers Makanan" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+            <img src="image/Hampers.png" alt="Hampers Eksklusif" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
           </div>
           <div class="p-6">
             <h3 class="text-xl font-bold mb-2">Hampers</h3>
-            <p class="text-slate-600 text-sm leading-relaxed mb-6">Bingkisan hantaran cantik dengan isian menu favorit untuk kolega atau keluarga.</p>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">Bingkisan hantaran elegan dengan kemasan cantik, sangat pas untuk kado kolega maupun keluarga.</p>
             <button onclick="pesanWA('Hampers')" class="w-full py-3 bg-white border-2 border-blue-600 text-blue-600 font-bold rounded-xl group-hover:bg-blue-600 group-hover:text-white transition duration-300">Pesan Sekarang</button>
           </div>
         </div>
 
         <div data-aos="fade-up" data-aos-delay="400" class="group bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-2xl transition duration-500">
           <div class="relative h-56 overflow-hidden">
-            <img src="image/Prasmanan.png" alt="Catering Prasmanan" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+            <img src="image/Catering.png" alt="Layanan Catering" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
           </div>
           <div class="p-6">
             <h3 class="text-xl font-bold mb-2">Catering</h3>
-            <p class="text-slate-600 text-sm leading-relaxed mb-6">Layanan prasmanan atau menu harian kantor dengan variasi masakan Nusantara.</p>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">Layanan prasmanan bintang lima atau menu harian kantor dengan cita rasa Nusantara yang otentik.</p>
             <button onclick="pesanWA('Catering')" class="w-full py-3 bg-white border-2 border-blue-600 text-blue-600 font-bold rounded-xl group-hover:bg-blue-600 group-hover:text-white transition duration-300">Pesan Sekarang</button>
           </div>
         </div>
       </div>
+
     </div>
   </section>
   
@@ -247,7 +239,7 @@
       <div>
         <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">Hubungi Kami</h4>
         <p class="text-sm mb-4 italic">Klik tombol di bawah untuk respon cepat</p>
-        <a href="https://wa.me/6285648783485" class="inline-block w-full text-center bg-blue-600/10 border border-blue-600/30 text-blue-400 py-3 rounded-xl font-bold hover:bg-blue-600 hover:text-white transition duration-300">0856-4878-3485</a>
+        <button onclick="HubungiWa()" class="inline-block w-full text-center bg-blue-600/10 border border-blue-600/30 text-blue-400 py-3 rounded-xl font-bold hover:bg-blue-600 hover:text-white transition duration-300">0856-4878-3485</a>
       </div>
     </div>
     <div class="max-w-6xl mx-auto border-t border-slate-900 mt-16 pt-8 text-center text-xs tracking-widest text-slate-600">

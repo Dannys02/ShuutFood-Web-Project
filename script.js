@@ -36,7 +36,7 @@ menuBtn.addEventListener("click", () => {
 function pesanWA(produk) {
     const noWA = "6285648783485";
     const pesan = encodeURIComponent(
-        `Halo Shuut Food, saya mau tanya-tanya tentang paket ${produk}.`
+        `Halo Kak admin Shuut Food, saya mau tanya-tanya dong tentang paket ${produk}-nya. Bisa dibantu?`
     );
     window.location.href = `https://wa.me/${noWA}?text=${pesan}`;
 }
@@ -44,10 +44,11 @@ function pesanWA(produk) {
 function HubungiWa() {
     const noWA = "6285648783485";
     const pesan = encodeURIComponent(
-        `Halo Shuut Food, saya mau konsultasi pemesanan catering.`
+        `Halo Kak admin Shuut Food, saya mau konsultasi nih buat rencana pemesanan. Bisa minta info detailnya?`
     );
     window.location.href = `https://wa.me/${noWA}?text=${pesan}`;
 }
+
 
 // Close mobile menu on click link
 document.querySelectorAll("#mobile-menu a").forEach(link => {
